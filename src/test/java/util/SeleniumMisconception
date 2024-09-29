@@ -1,0 +1,88 @@
+
+1 : we can not use alpha numeric Id
+2 : we can not use compund classes
+3 : for link text locator verify ancher tag
+4 : we can not use "" inside ""
+5 : every elment can not have id, name or classname, we have to use xpath or css
+ selector
+6 : n number of way to get xpath or css selectors :
+ right click on highlated code and copy xpath or css selectors
+
+
+how to createxpath :
+***********************************
+1 : //tagName[@attribute='value']
+
+//input[@name='email']
+
+//*[@name='email']
+
+2 : //tagName[contains(@attribute,'value')]
+
+//input[contains(@id,'u_j_')]
+//*[contains(@id,'u_j_')]
+
+3 : parent - child traversing
+//table[@id='customers']/tbody/tr[4]/td[3]
+
+4 : child - to parent traversing
+//div[@id='userName']/parent::div/parent::div
+
+5 : sibllings traversing
+//div[@id='userName']/parent::div/parent::div/preceding-sibling::div[1]
+
+6 : text
+//*[text()='abcd']
+
+
+************************
+Custome CSS :
+
+1 : id--> htmltag#id , #id
+
+input#l_username
+#l_username
+
+
+2 : class -->htmltag.classame, .classname, .c1.c2.c3, htmltag.c1.c2.c3..cn
+
+small.private-microcopy.private-form__description.is--text--help
+
+
+3 : parent>childtag
+.header>.header-inner
+
+
+4 : htmltad[id='value'] - with 1 nad 2 attribute
+ul[id="categories"]
+
+
+5 : contains text in css
+input[id*='value']
+
+
+6 : starting text
+input[id^='value']
+
+
+7 : ending text :
+input[id$='value']
+
+
+8 : first-of-type in css
+ul:categories>li:first-of-type
+
+9 : last-of-type in css
+ul:categories>li:last-of-type
+
+10 : nth-of-type in css
+ul:categories>li:nth-of-type(n)
+
+
+
+11 : sibling
+div.classname+div.classname
+
+
+12 : not oprator
+div.class:not(div.class)

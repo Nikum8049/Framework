@@ -1,0 +1,25 @@
+Add jars in project :
+*********************
+download jar  - > extreact -> rightclick on project -> buildpath ->
+configure build path - > libraries - > class path - > add extrenal jars ->
+select jar from your folder - > apply and close
+
+WebElements :
+*****************
+Textbox
+button
+radio button
+checkbox
+dropdown
+link
+
+Locators :
+************
+id
+name
+class name
+xpath
+css selectors
+tagname
+link text
+partial linktext
